@@ -35,6 +35,12 @@ body {
 /* ================== UNIVERSAL =================================================== */
 /* ================================================================================*/
 
+.wrapper-social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .blue-text {
   color: var(--brand-color);
 }
@@ -138,6 +144,10 @@ body {
   justify-content: space-between;
 }
 
+.nav-menu::before {
+  content: icon;
+}
+
 .navigation-button {
   color: inherit;
   text-decoration: none;
@@ -160,6 +170,18 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  position: relative;
+}
+
+.icon-mail {
+  position: absolute;
+  left: -22.5px;
+  top: 1px;
+}
+
+.icon-tel {
+  position: absolute;
+  left: -15px;
 }
 
 .header-border {
@@ -174,8 +196,8 @@ body {
 .header-address:hover,
 .navigation-button:focus,
 .header-address:focus,
-.header-address svg:hover,
-.header-address svg:focus {
+.header-address:hover .icon-color,
+.header-address:focus .icon-color {
   color: var(--brand-color);
   outline: none;
   --color2: var(--brand-color);
@@ -388,7 +410,8 @@ body {
   border-radius: 0px 0px 4px 4px;
   width: 270px;
   margin: 0;
-  height: 368px;
+  height: 428px;
+  background-color: var(--white-color);
 }
 
 .box-styling-main-bottom {
