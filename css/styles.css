@@ -7,6 +7,8 @@
   --second-link-color: rgba(255, 255, 255, 0.6);
   --button-color: rgba(245, 244, 250, 1);
   --border-color: rgba(236, 236, 236, 1);
+  --shadow: rgba(47, 48, 58, 0.4);
+  --border-grey: rgba(175, 177, 184, 1);
 }
 
 body {
@@ -47,6 +49,7 @@ body {
 
 .list-styling {
   list-style: none;
+  padding-left: 0;
 }
 
 .container {
@@ -88,6 +91,41 @@ body {
   letter-spacing: 0.03em;
 }
 
+.icon-color {
+  --color2: var(--border-grey);
+  --color5: var(--border-grey);
+  --color3: var(--border-grey);
+  --color4: var(--border-grey);
+}
+
+.icon-color:hover {
+  --color2: var(--brand-color);
+  --color5: var(--brand-color);
+  --color3: var(--brand-color);
+  --color4: var(--brand-color);
+  cursor: pointer;
+}
+
+.icon-social {
+  --color3: var(--border-grey);
+  --color4: var(--border-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  width: 44px;
+  height: 44px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.icon-social:hover {
+  background-color: var(--brand-color);
+  --color3: var(--white-color);
+  --color4: var(--white-color);
+  cursor: pointer;
+}
+
 .nav-position {
   flex-grow: 1;
   justify-self: flex-start;
@@ -112,6 +150,7 @@ body {
 .nav-contact {
   display: flex;
   gap: 50px;
+  padding-left: 0px;
 }
 
 .header-address {
@@ -134,9 +173,13 @@ body {
 .navigation-button:hover,
 .header-address:hover,
 .navigation-button:focus,
-.header-address:focus {
+.header-address:focus,
+.header-address svg:hover,
+.header-address svg:focus {
   color: var(--brand-color);
   outline: none;
+  --color2: var(--brand-color);
+  --color5: var(--brand-color);
 }
 
 /*=*/
@@ -210,6 +253,15 @@ body {
   color: var(--white-color);
 }
 
+.main-header-background {
+  background-image: url(../images/main-header-background.jpg);
+  background-size: cover;
+}
+
+.shadow {
+  background-image: linear-gradient(to bottom, var(--shadow), var(--shadow));
+}
+
 .main-text-position {
   height: 120px;
   width: 700px;
@@ -258,6 +310,14 @@ body {
   margin-top: 94px;
 }
 
+.lorem-object {
+  display: flex;
+  justify-content: center;
+  background-color: var(--button-color);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
 .lorem-topic {
   font-size: 14px;
   line-height: 1.14;
@@ -283,12 +343,26 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 0;
+  padding-bottom: 50px;
 }
 
 .main-page-team {
   display: flex;
   padding: 0;
   gap: 2.5%;
+}
+
+.main-page-customers {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.main-page-customers li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-member-name {
@@ -315,6 +389,17 @@ body {
   width: 270px;
   margin: 0;
   height: 368px;
+}
+
+.box-styling-main-bottom {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--border-grey);
+  border-radius: 4px;
+}
+
+.box-styling-main-bottom:hover {
+  border-color: var(--brand-color);
 }
 
 .main-bottom-section {

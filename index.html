@@ -38,14 +38,20 @@
           </nav>
           <div>
             <ul class="nav-contact list-styling">
-              <li>
-                <a class="header-address" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+              <li class="header-hover">
+                <a class="header-address" href="mailto:info@devstudio.com">
+                  <svg class="icon-color" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="header-address" href="tel:+48111111111"
-                  >+48 111 111 111</a
+                <a class="header-address" href="tel:+48111111111">
+                  <svg class="icon-color" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +48 111 111 111</a
                 >
               </li>
             </ul>
@@ -54,17 +60,24 @@
       </div>
     </header>
     <main>
-      <section class="central-text-position background-block">
-        <h1 class="main-text-position central-text">
-          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-        </h1>
-        <button class="main-button-position main-page-button" type="button">
-          Zamów usługe
-        </button>
+      <section class="main-header-background">
+        <div class="central-text-position shadow">
+          <h1 class="main-text-position central-text">
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          </h1>
+          <button class="main-button-position main-page-button" type="button">
+            Zamów usługe
+          </button>
+        </div>
       </section>
       <div class="container">
         <ul class="lorem-section list-styling">
           <li>
+            <div class="lorem-object">
+              <svg height="70" width="70">
+                <use href="./images/icons.svg#icon-antenna-1"></use>
+              </svg>
+            </div>
             <h4 class="lorem-topic">LOREM IPSUM</h4>
             <p class="lorem-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -72,6 +85,11 @@
             </p>
           </li>
           <li>
+            <div class="lorem-object">
+              <svg height="70" width="70">
+                <use href="./images/icons.svg#icon-clock-1"></use>
+              </svg>
+            </div>
             <h4 class="lorem-topic">LOREM IPSUM</h4>
             <p class="lorem-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -79,6 +97,11 @@
             </p>
           </li>
           <li>
+            <div class="lorem-object">
+              <svg height="70" width="70">
+                <use href="./images/icons.svg#icon-diagram-1"></use>
+              </svg>
+            </div>
             <h4 class="lorem-topic">LOREM IPSUM</h4>
             <p class="lorem-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -86,6 +109,11 @@
             </p>
           </li>
           <li>
+            <div class="lorem-object">
+              <svg height="70" width="70">
+                <use href="./images/icons.svg#icon-astronaut-1"></use>
+              </svg>
+            </div>
             <h4 class="lorem-topic">LOREM IPSUM</h4>
             <p class="lorem-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -135,6 +163,17 @@
                   <h4 class="team-member-name">John Doe</h4>
                   <p class="team-member-position">Product Designer</p>
                 </figcaption>
+                <div>
+                  <ul class="list-styling">
+                    <li>
+                      <a class="social-background icon-social" href="#">
+                        <svg width="20" height="20">
+                          <use href="./images/icons.svg#icon-instagram-2"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </figure>
             </li>
             <li>
@@ -178,6 +217,41 @@
             </li>
           </ul>
         </div>
+      </section>
+      <section class="container section">
+        <h2 class="main-page-header">Nasi klienci</h2>
+        <ul class="main-page-customers list-styling">
+          <li class="box-styling-main-bottom">
+            <svg class="icon-color" width="170" height="92">
+              <use href="./images/icons.svg#icon-Client-1"></use>
+            </svg>
+          </li>
+          <li class="box-styling-main-bottom">
+            <svg class="icon-color" width="170" height="92">
+              <use href="./images/icons.svg#icon-Client-2"></use>
+            </svg>
+          </li>
+          <li class="box-styling-main-bottom">
+            <svg class="icon-color" width="170" height="92">
+              <use href="./images/icons.svg#icon-Client-3"></use>
+            </svg>
+          </li>
+          <li class="box-styling-main-bottom">
+            <svg class="icon-color" width="170" height="92">
+              <use href="./images/icons.svg#icon-Client-4"></use>
+            </svg>
+          </li>
+          <li class="box-styling-main-bottom">
+            <svg class="icon-color" width="170" height="92">
+              <use href="./images/icons.svg#icon-Client-5"></use>
+            </svg>
+          </li>
+          <li class="box-styling-main-bottom">
+            <svg class="icon-color" width="170" height="92">
+              <use href="./images/icons.svg#icon-Client-6"></use>
+            </svg>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="background-block">
